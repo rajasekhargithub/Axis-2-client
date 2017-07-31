@@ -206,13 +206,13 @@
     </wsdl:binding>
     <wsdl:service name="HighScoreService">
         <wsdl:port name="HighScoreServiceHttpSoap11Endpoint" binding="ns:HighScoreServiceSoap11Binding">
-            <soap:address location="http://ec2-34-208-77-41.us-west-2.compute.amazonaws.com:8080/axis2/services/HighScoreService"/>
+            <soap:address location="http://localhost:8080/axis2/services/HighScoreService"/>
         </wsdl:port>
         <wsdl:port name="HighScoreServiceHttpSoap12Endpoint" binding="ns:HighScoreServiceSoap12Binding">
-            <soap12:address location="http://ec2-34-208-77-41.us-west-2.compute.amazonaws.com:8080/axis2/services/HighScoreService"/>
+            <soap12:address location="http://localhost:8080/axis2/services/HighScoreService"/>
         </wsdl:port>
         <wsdl:port name="HighScoreServiceHttpEndpoint" binding="ns:HighScoreServiceHttpBinding">
-            <http:address location="http://ec2-34-208-77-41.us-west-2.compute.amazonaws.com:8080/axis2/services/HighScoreService"/>
+            <http:address location="http://localhost:8080/axis2/services/HighScoreService"/>
         </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>
